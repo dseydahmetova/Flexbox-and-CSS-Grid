@@ -1,0 +1,102 @@
+body {
+    background: gray;
+}
+
+.container {
+    width: 300px;
+    margin: 20px auto;
+    height: 300px;
+    display: grid;
+    grid-gap: 4px;
+    grid-template-rows: 100px 100px 1fr 1fr;
+    grid-template-columns: 80px 1fr 30px;
+}
+
+
+.item {
+    background: #F3F3F3;
+}
+
+.one {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.two {
+  grid-row: 2;
+  grid-column: 1;  
+}
+
+.three {
+  grid-row: 3 / 5;
+  grid-column: span 1;  
+  background-color: blue;
+}
+
+.four {
+  grid-row: span 2;
+  grid-column: span 2;  
+  background-color: red;
+}
+
+.five {
+  grid-row: span 2;
+  grid-column: span 1;  
+}
+
+.six {
+ grid-row: 3;
+  grid-column: 3;  
+}
+
+.seven {
+   grid-row: 4;
+  grid-column: 3;  
+  background-color: yellow; 
+}
+
+
+
+
+/* Flexbox styles */
+
+
+/* It was fun to work with you, guys. Thank you! The code is working now, feel free to adjust the sizes for the boxes
+ */
+
+#flexBox{
+   background-color: black;
+  height: 700px;
+   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+/*   gap: 50px; */
+}
+
+.blueBox{
+  background-color: blue;
+  height: 350px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  
+}
+
+.smallBlueBox{
+  background-color: blue;
+  height: 6px;
+  width: 6px;
+}
+
+.blackBox{
+  background-color: black;
+  height: 70px;
+  width: 70px;
+   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
